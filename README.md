@@ -116,16 +116,13 @@
 ---
 
 ## 7. 트러블 슈팅
-- 가장 높은 족보인 '스트레이트플러쉬'에서 플러쉬와 스트레이트를 동시에 판별하기
->먼저, 동일한 문양 의 갯수가 5개일 때를 판별한 후, 같은 문양인 카드의 갯수가 5개 이상일 때,
->4칸 차이나는 카드 수의 차가 4일때 스트레이트로 판별</br>
->![image](https://user-images.githubusercontent.com/101616249/180962440-8aa467ab-c9e1-4c35-9c60-ae1456839f4f.png)</br>
 
----
+### 일정만들기 페이지에서 관광지를 각 DAY 영역에 독립적으로 추가 및 삭제하기 문제
+![image](https://user-images.githubusercontent.com/101616249/181312002-c2110165-9198-4f27-84d6-4e04b66f031b.png)
+![image](https://user-images.githubusercontent.com/101616249/181312702-4eb9f44f-3932-4669-8746-9ce6ffc302bb.png)
 
-- 숫자와 문양이 합쳐져 있는 카드에서 숫자만 도출하기
->정규표현식을 사용하여 숫자만 사용가능
->![image](https://user-images.githubusercontent.com/101616249/180962916-2f33dbd3-965a-42c2-bcc8-4f4cb3ebe0c8.png)
+- 추가버튼(+)을 누르면 좌측 영역에 선택한 관광지의 정보를 innerHTML을 통해 입력
+- day_filter를 통해 각 DAY에 해당하는 값을 가지고 있는 관광지만 보여주기 
 
 ---
 
