@@ -1,5 +1,5 @@
 ## :pushpin: HappyEver
->언제나 행복한 여행 :smile: </br>
+>### 언제나 행복한 여행 :smile:
 >(국내여행 플래너)
 </br>
 
@@ -42,25 +42,46 @@
 ### ERD
 ![image](https://user-images.githubusercontent.com/101616249/181298973-f9b13656-58f3-43ea-9235-bc38260eea9d.png)
 
-
 ---
 
 ## 5. 핵심 기능
 
-5-1. 게임 준비
-- 포커 덱 만들기
->![포커 덱 만들기](https://user-images.githubusercontent.com/101616249/180955008-a68a9a98-e7b4-468f-917b-1d9d70c5c4ac.PNG)
-</br>
+### 5-1. 메인 페이지 & 로그인
+#### 메인 페이지
+![image](https://user-images.githubusercontent.com/101616249/181301261-8514d51d-f225-4f65-a9ea-c97c2159876a.png)
+![image](https://user-images.githubusercontent.com/101616249/181301310-ab941fe5-c394-4b17-9b2a-7c56b1b89ea8.png)
 
-- 포커 덱에서 이용자에게 보낸 카드를 버리기
->![포커 덱에서 보낸 카드 버리기](https://user-images.githubusercontent.com/101616249/180955152-1f80c653-1573-4013-b893-daeac83a0d4e.PNG)
-</br>
+- 모든 페이지에서 헤더를 통해 메인 페이지로 이동 가능
+- 글자를 입력할 때마다 검색 결과가 즉각적으로 변하는 검색기능 구현
+- 여행지를 선택하면 일정 만들기 페이지로 이동
+- 비로그인 시 사용기능 제한
+</br></br>
 
-- 베팅 메서드
->![베팅 메서드](https://user-images.githubusercontent.com/101616249/180955209-738ea73e-d443-468e-8b1f-d5621c78c089.PNG)
+#### 로그인 & 비밀번호 찾기
+![image](https://user-images.githubusercontent.com/101616249/181302292-5c8343e8-859b-43c1-88d4-3a175227ffb5.png)
 
-5-2. 패의 족보 판정하기(높은 족보 순으로 점수 부여)
-- Jokbo.java 참고
+- 정규표현식을 사용하여 이메일 형식 체크
+- 사용자 정보가 틀렸을 때 alert으로 안내문구 출력
+- [로그인]
+  - header에 로그인 버튼 클릭시 모달창 화면 구현
+  - 로그인 성공시 session에 회원정보 저장
+- [비밀번호 찾기]
+  - 이메일과 이름으로 회원가입 검사, 이메일로 임시 비밀번호 전송
+
+### 5-2. 일정만들기 & 게시판
+#### 일정만들기
+![image](https://user-images.githubusercontent.com/101616249/181305180-ab7da478-adf0-453e-8122-c6955e846f04.png)
+
+- 선택한 여행지에 따라 화면 이동
+- 지도 API와 한국관광공사 API를 이용하여 클라이언트에게 추천 장소와 위치를 제공
+- 여행 날짜를 입력 시 여행 일수만큼 좌측에 DAY 생성
+- DAY마다 사용자가 원하는 여행지 개별 추가 기능
+- 각 DAY는 서로 독립적이다.
+
+#### 게시판
+![image](https://user-images.githubusercontent.com/101616249/181305751-dff320bc-9b73-4b8e-a3a2-e53486e8c23e.png)
+
+- 여행 키워드 클릭 또는 검색어를 입력하였을 때 동적으로 변하는 검색기능 구현
 
 ## 6. 트러블 슈팅
 - 가장 높은 족보인 '스트레이트플러쉬'에서 플러쉬와 스트레이트를 동시에 판별하기
