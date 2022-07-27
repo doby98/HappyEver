@@ -90,7 +90,31 @@
 
 ---
 
-## 6. 트러블 슈팅
+## 6. 핵심 코드
+
+### 6-1. 한국관광공사 API를 이용해 받아온 JSON 형식의 데이터를 테이블에 INSERT 하기
+![image](https://user-images.githubusercontent.com/101616249/181307577-4f9064fc-45e8-45cd-89ed-62fe01ffec0a.png)
+![image](https://user-images.githubusercontent.com/101616249/181307870-1872988c-ebfe-4e25-86c8-c9d9b2a2e94b.png)
+
+- API를 통해 JSON 형식으로 받아온 데이터 중 필요한 정보들을 추려서 list 객체에 담아 Parameter로 넘긴다.
+- 넘어온 데이터를 DB 테이블과 동일한 순서와 타입으로 세팅한 후 MVC2 방법을 이용해 처리한다.</br></br>
+
+### 6-2. 회원탈퇴 기능 구현
+![image](https://user-images.githubusercontent.com/101616249/181308881-0d544c11-b340-4883-b368-fc4ea0c38665.png)
+</br>
+![image](https://user-images.githubusercontent.com/101616249/181308924-54168b31-345f-4935-83f3-f863a67c14ce.png)
+</br>
+![image](https://user-images.githubusercontent.com/101616249/181308995-63f6b8ad-7566-4b4d-8e40-cac48cbdcd3e.png)
+</br>
+![image](https://user-images.githubusercontent.com/101616249/181309165-df61822f-2d3c-4be7-9b2b-640cb6326b28.png)
+
+- MVC2 방법을 이용한 회원탈퇴 기능 구현
+- session에 담긴 이메일을 이용하여 회원탈퇴 진행, DB 테이블에서 로그인 되어있는 이메일과 일치하는 데이터 삭제 
+</br></br>
+
+---
+
+## 7. 트러블 슈팅
 - 가장 높은 족보인 '스트레이트플러쉬'에서 플러쉬와 스트레이트를 동시에 판별하기
 >먼저, 동일한 문양 의 갯수가 5개일 때를 판별한 후, 같은 문양인 카드의 갯수가 5개 이상일 때,
 >4칸 차이나는 카드 수의 차가 4일때 스트레이트로 판별</br>
