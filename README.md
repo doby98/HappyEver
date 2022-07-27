@@ -100,13 +100,14 @@
 - 넘어온 데이터를 DB 테이블과 동일한 순서와 타입으로 세팅한 후 MVC2 방법을 이용해 처리한다.</br></br>
 
 ### 6-2. 회원탈퇴 기능 구현
-![image](https://user-images.githubusercontent.com/101616249/181308881-0d544c11-b340-4883-b368-fc4ea0c38665.png)
-</br>
-![image](https://user-images.githubusercontent.com/101616249/181308924-54168b31-345f-4935-83f3-f863a67c14ce.png)
-</br>
-![image](https://user-images.githubusercontent.com/101616249/181308995-63f6b8ad-7566-4b4d-8e40-cac48cbdcd3e.png)
-</br>
-![image](https://user-images.githubusercontent.com/101616249/181309165-df61822f-2d3c-4be7-9b2b-640cb6326b28.png)
+1. 넘어온 URL을 판별하여 해당 기능을 구현한 Action 메서드 실행</br>
+![image](https://user-images.githubusercontent.com/101616249/181308881-0d544c11-b340-4883-b368-fc4ea0c38665.png)</br>
+2. 메서드에서 회원탈퇴를 진행할 DAO로 이동</br>
+![image](https://user-images.githubusercontent.com/101616249/181308924-54168b31-345f-4935-83f3-f863a67c14ce.png)</br>
+3. DAO에서는 회원탈퇴에 해당하는 쿼리문을 실행</br>
+![image](https://user-images.githubusercontent.com/101616249/181308995-63f6b8ad-7566-4b4d-8e40-cac48cbdcd3e.png)</br>
+4. 해당 쿼리문을 통해 DB 테이블에서 delete 성공</br>
+![image](https://user-images.githubusercontent.com/101616249/181309165-df61822f-2d3c-4be7-9b2b-640cb6326b28.png)</br>
 
 - MVC2 방법을 이용한 회원탈퇴 기능 구현
 - session에 담긴 이메일을 이용하여 회원탈퇴 진행, DB 테이블에서 로그인 되어있는 이메일과 일치하는 데이터 삭제 
